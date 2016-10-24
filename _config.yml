@@ -9,12 +9,8 @@ name:               "wjjwkwindy"
 
 author:
   name:             wjjwkwindy
-  facebook:         your-id
-  twitter:          your-id
-  github:           your-id
-  linkedin:         your-id
-  medium:           your-id
-  tumblr:           your-id
+  github:           wjjwkwindy
+  twitter:          619118498
   email:            wjjwkwindy@gmail.com
 
 # Google-analytics
@@ -26,8 +22,8 @@ disqus:
   id:               "your-id"
 
 # URL
-url:                "https://wjjwkwindy.github.io"
-#url:               "localhost:4000"
+url:                "http://127.0.0.1:4000"
+#url:               "https://wjjwkwindy.github.io"
 baseurl:            ""
 
 
