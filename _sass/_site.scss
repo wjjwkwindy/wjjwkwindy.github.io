@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: $base-font;
+  font-family: $fix-font;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
@@ -110,6 +110,7 @@ body {
   Post
   -------------- */
 .post {
+  //font-family: $chinese-font;
 
   &-title {
     margin-bottom: 0rem;
@@ -146,6 +147,14 @@ body {
   }
   &-share {
     margin-bottom: 1rem;
+    font-weight: 400;
+  }
+
+  &-content {
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7;
   }
 }
 
@@ -187,6 +196,7 @@ body {
 			color: lighten($base-color, 20);
       margin-bottom: .25rem;
       font-size :1rem;
+      font-weight: 400;
     }
   }
 
