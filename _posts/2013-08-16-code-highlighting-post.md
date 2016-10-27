@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Syntax Highlighting Post"
-description: "Demo post displaying the various ways of highlighting code in Markdown."
+title: "代码高亮 Syntax highlighting"
+description: "在Markdown中显示各种各样的高亮代码。"
 date: 2013-08-16
 tags: [sample post, code, highlighting]
 comments: true
@@ -9,13 +9,15 @@ share: true
 ---
 
 
-Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.[^1]
+**语法突显**（英语：Syntax highlighting，又称**语法高亮**、**语法加亮**），是指根据术语（关键字）类别来显示不同的颜色与字体以增强可读性的一种编辑器特性。  
+这种功能可改善人对编辑器中内容（通常为源代码）的可读性，进而降低出现误读或误写而出现错误的几率。[^1]
 
-[^1]: <http://en.wikipedia.org/wiki/Syntax_highlighting>
 
-### Highlighted Code Blocks
+[^1]: <https://zh.wikipedia.org/wiki/%E8%AA%9E%E6%B3%95%E7%AA%81%E9%A1%AF>
 
-To modify styling and highlight colors edit `/_sass/_highlighter.scss`.
+### 代码高亮块
+
+自定义样式和颜色可以编辑这个文件 `/_sass/_highlighter.scss`。
 
 ```css
 #container {
@@ -57,7 +59,7 @@ end
 ```
 
 
-### Standard Code Block
+### 普通代码块
 
     {% raw %}<nav class="pagination" role="navigation">
         {% if page.previous %}
@@ -68,8 +70,8 @@ end
         {% endif %}
     </nav><!-- /.pagination -->{% endraw %}
 
-### GitHub Gist Embed
+### 嵌入GitHub Gist
 
-An example of a Gist embed below.
+下面是一个嵌入Gist的例子。
 
-<script src="https://gist.github.com/mmistakes/43a355923921d22cd993.js"></script>
+<script src="https://gist.github.com/wjjwkwindy/57c47a7b8ab0749fd3e509ae3c7c6977.js"></script>

@@ -1,46 +1,45 @@
 ---
 layout: post
-title: "A Full and Comprehensive Style Test"
-description: "Test post for style"
+title: "综合样式测试"
+description: "测试文章的样式"
 date: 2016-08-15
 tags: [test, style]
 comments: true
 share: true
 ---
 
-Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
-
-# Body text
+下面是所有你需要在主题中应用的样式。通过源代码来查看在段落中插入的许多元素。
+# 正文
 
 ---
 
-# Heading 1
+# 标题 1
 
-## Heading 2
+## 标题 2
 
-### Heading 3
+### 标题 3
 
-#### Heading 4
+#### 标题 4
 
-##### Heading 5
+##### 标题 5
 
-###### Heading 6
+###### 标题 6
 
 Lorem ipsum dolor sit amet, [test link](#) adipiscing elit. **This is strong.** Nullam dignissim convallis est. Quisque aliquam. *This is emphasized.* Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <u>Underline</u>. Maecenas ornare tortor. Donec sed tellus eget `COPY filename` sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, <del>Dinner’s at 5:00.</del> commodo vitae, feugiat in, nunc. Morbi imperdiet augue <mark>mark element</mark> quis tellus.
 
-# Images
+# 图片
 
 ![Large example image](http://placehold.it/800x400 "Large example image")
 ![Medium example image](http://placehold.it/400x200 "Medium example image")
 ![Small example image](http://placehold.it/200x200 "Small example image")
 
-# Blockquotes
+# 引用
 
 > Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
 
-# List Types
+# 列表类型
 
-### Ordered Lists
+### 有序列表
 
 1. Item one
    1. sub item one
@@ -48,7 +47,7 @@ Lorem ipsum dolor sit amet, [test link](#) adipiscing elit. **This is strong.** 
    3. sub item three
 2. Item two
 
-### Unordered Lists
+### 无序列表
 
 * Item one
   * sub item one
@@ -57,7 +56,7 @@ Lorem ipsum dolor sit amet, [test link](#) adipiscing elit. **This is strong.** 
 * Item two
 * Item three
 
-### Definition Lists
+### 自定义列表
 
 kramdown
 : A Markdown-superset converter
@@ -65,7 +64,7 @@ kramdown
 Maruku
 : Another Markdown-superset converter
 
-# Tables
+# 表格
 
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
@@ -78,9 +77,9 @@ Maruku
 | Foot1   | Foot2   | Foot3
 
 
-# Code Snippets
+# 代码段
 
-Syntax highlighting via Rouge
+代码高亮 via Rouge
 
 ```css
 #container {
@@ -90,7 +89,7 @@ Syntax highlighting via Rouge
 }
 ```
 
-Non Pygments code example
+没有运用Pygments的代码示例
 
     <div id="awesome">
         <p>This is great isn't it?</p>
