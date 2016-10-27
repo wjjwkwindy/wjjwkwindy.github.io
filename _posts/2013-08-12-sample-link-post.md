@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Sample Link Post
-description: "This theme supports link posts, made famous by John Gruber. To use, just add `link: http://url-you-want-linked` to the post's YAML front matter and you're done."
+title: 发布文章链接
+description: "这个主题支持发布链接, 由John Gruber制作. 如果要使用, 只需要添加`link: http://url-you-want-linked`到YML的头部信息就行了。"
 tags:
   - sample post
   - link post
 comments: true
-link: 'http://aweekj.github.io/Kiko-plus'
+link: 'https://www.baidu.com'
 ---

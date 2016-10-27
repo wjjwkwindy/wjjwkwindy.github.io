@@ -32,7 +32,7 @@ a {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: .5rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.1;
   color: #333;
   letter-spacing: -.025rem;
@@ -43,7 +43,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 h3 {
@@ -242,6 +242,13 @@ img {
   max-width: 100%;
   margin: 0 0 1rem;
   border-radius: 5px;
+}
+
+.img-no-border-radius{
+  display: block;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  border-radius: 0px;
 }
 
 table {
