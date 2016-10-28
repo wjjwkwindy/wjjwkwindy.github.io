@@ -22,8 +22,8 @@ disqus:
   id:               "wjjwkwindy"
 
 # URL
-url:                "http://127.0.0.1:4000"
-#url:               "https://wjjwkwindy.github.io"
+url:                "https://wjjwkwindy.github.io"
+#url:               "http://127.0.0.1:4000"
 baseurl:            ""
 
 
