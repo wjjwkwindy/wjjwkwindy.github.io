@@ -1,9 +1,7 @@
-# wjjwkwindy.github.io
+# wjjwkwindy's blog
 
-View: _[wjjwkwindy.github.io](https://wjjwkwindy.github.io/)_
+#### View: **[wjjwkwindy.com](https://wjjwkwindy.com)**
 
-Theme by [Kiko-plus](https://github.com/AWEEKJ/Kiko-plus).
-
-Powered by [Jekyll](https://jekyllrb.com/).
-
-Hosted by [Github Pages](https://pages.github.com/).
+Theme by [Kiko-plus](https://github.com/AWEEKJ/Kiko-plus).  
+Powered by [Jekyll](https://jekyllrb.com/).  
+Hosted on [Github Pages](https://pages.github.com/).
