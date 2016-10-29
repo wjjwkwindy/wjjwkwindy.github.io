@@ -21,7 +21,7 @@ permalink: /about/
 > Name: wjjwkwindy  
 > Github: [https://github.com/wjjwkwindy](https://github.com/wjjwkwindy)  
 > Blog: [https://wjjwkwindy.github.io](https://wjjwkwindy.github.io)  
-> Mail: [wjjwkwindy@gmail.com](mailto:wjjwkwindy@gmail.com)
+> Mail: [wjjwkwindy|gmail.com](mailto:wjjwkwindy|gmail.com)
 
 <div class="code-in">
   <code class="code-in-chengdu">
