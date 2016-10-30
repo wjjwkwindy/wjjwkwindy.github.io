@@ -44,12 +44,19 @@ kramdown:
 nav:
   - name:           "About"
     url:            "/about"
+    target:         "_top"
+
   - name:           "Archive"
     url:            "/archive"
+    target:         "_top"
+
   - name:           "Tags"
     url:            "/tags"
+    target:         "_top"
+
   - name:           "Github"
     url:            "https://github.com/wjjwkwindy"
+    target:         "_blank"
 
 
 
