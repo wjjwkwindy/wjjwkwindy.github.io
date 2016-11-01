@@ -28,7 +28,7 @@ share: true
 1.右键点击文件夹然后选择“属性”选项。然后打开“安全”选项。
 
 <div align="center">
-  <img src="{{ site.baseurl }}\images\TrustedInstaller_2.PNG" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}\images\TrustedInstaller_2.png" class="img-no-border-radius"/>
 </div>
 
 2.点击“高级”按钮。
@@ -36,25 +36,25 @@ share: true
 3.在“所有者”栏，点击“更改”来从TrustedInstaller改变文件夹所有者。
 
 <div align="center">
-  <img src="{{ site.baseurl }}\images\TrustedInstaller_3.PNG" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}\images\TrustedInstaller_3.png" class="img-no-border-radius"/>
 </div>
 
 4.在“选择用户或组”窗口中点击“高级”按钮。
 
 <div align="center">
-  <img src="{{ site.baseurl }}\images\TrustedInstaller_4.PNG" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}\images\TrustedInstaller_4.png" class="img-no-border-radius"/>
 </div>
 
 5.点击“立即查找”并在列表中选择你的用户名。点击“确认”，再点击“确认”。
 
 <div align="center">
-  <img src="{{ site.baseurl }}\images\TrustedInstaller_5.PNG" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}\images\TrustedInstaller_5.png" class="img-no-border-radius"/>
 </div>
 
 6.选中“替换子容器和对象的所有者”，再点击“确认”。(注：文件夹包含文件较多时，需要等待一段时间)
 
 <div align="center">
-  <img src="{{ site.baseurl }}\images\TrustedInstaller_6.PNG" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}\images\TrustedInstaller_6.png" class="img-no-border-radius"/>
 </div>
 
 7.再一次点击“安全”选项窗口中的“高级”按钮。
@@ -66,13 +66,13 @@ share: true
 10.在基本权限中选中“完全控制”，再点击“确认”。
 
 <div align="center">
-  <img src="{{ site.baseurl }}\images\TrustedInstaller_7.PNG" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}\images\TrustedInstaller_7.png" class="img-no-border-radius"/>
 </div>
 
 11.选中“使用可从此对象继承的权限项目替换所有子对象的权限项目”。
 
 <div align="center">
-  <img src="{{ site.baseurl }}\images\TrustedInstaller_8.PNG" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}\images\TrustedInstaller_8.png" class="img-no-border-radius"/>
 </div>
 
 12.点击“确认”按钮。(注：文件夹包含文件较多时，需要等待一段时间)
