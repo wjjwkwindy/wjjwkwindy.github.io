@@ -15,7 +15,11 @@ author:
 
 # Google-analytics
 google-analytics:
-  id:               "UA-86298174-1"
+  #id:               "UA-86298174-1"
+
+# Baidu-analytics
+baidu-analytics:
+  id:               true
 
 # Disqus
 disqus:
@@ -28,7 +32,7 @@ baseurl:            ""
 
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:           Asia/Bei_Jing
+timezone:           Asia/Shang_Hai
 permalink:          /:year-:month-:day/:title/
 
 # Pagination
