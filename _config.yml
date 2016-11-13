@@ -21,9 +21,9 @@ google-analytics:
 baidu-analytics:
   id:               true
 
-# Disqus
-disqus:
-  id:               "wjjwkwindy"
+# Uyan(YouYan)
+uyan:
+  id:               true
 
 # URL
 url:                "http://wjjwkwindy.com"
