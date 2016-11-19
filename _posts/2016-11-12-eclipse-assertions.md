@@ -15,7 +15,7 @@ share: true
 1.在菜单中点击 `Run`，再点击 `Run Configurations`。
 
 <div align="center">
-  <img src="{{ site.baseurl }}\images\eclipse_assertions_1.png" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}/images/eclipse_assertions_1.png" class="img-no-border-radius"/>
 </div>
 
 2.在左边的面板中, 点击 `Java Application`，再点击 `Assertions`。
@@ -25,7 +25,7 @@ share: true
 4.在 `VM arguments` 输入框中, 输入 `-ea` 来启用断言语句。
 
 <div align="center">
-  <img src="{{ site.baseurl }}\images\eclipse_assertions_2.png" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}/images/eclipse_assertions_2.png" class="img-no-border-radius"/>
 </div>
 
 5.点击 `Apply` 按钮然后点击 `Run` 按钮.
