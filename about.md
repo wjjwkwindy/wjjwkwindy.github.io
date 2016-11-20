@@ -19,8 +19,8 @@ permalink: /about/
 欢迎交流
 
 > Name: wjjwkwindy  
-> Github: [https://github.com/wjjwkwindy](https://github.com/wjjwkwindy)  
-> Blog: [https://wjjwkwindy.github.io](https://wjjwkwindy.github.io)  
+> Github: [github.com/wjjwkwindy](https://github.com/wjjwkwindy)  
+> Blog: [wjjwkwindy.com](http://wjjwkwindy.com)  
 > Mail: [wjjwkwindy|gmail.com](mailto:wjjwkwindy|gmail.com)
 
 <div class="code-in">
