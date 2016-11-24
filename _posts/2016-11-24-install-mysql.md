@@ -2,7 +2,7 @@
 layout: post
 title: "Mac中安装MySQL"
 description: "Mac中安装MySQL"
-date: 2016-11-21
+date: 2016-11-24
 tags: [mysql ,Mac]
 comments: true
 share: true
@@ -22,7 +22,7 @@ MySQL安装方式：.dmg文件
   <img src="{{ site.baseurl }}/images/install_mysql_2.png" class="img-no-border-radius"/>
 </div>
 ### 3.验证文件的完整性(可跳过本步骤)
-打开Terminal终端，输入`cd Downloads`进入下载文件夹。  
+打开Terminal终端，输入`cd Downloads/`进入下载文件夹。  
 <div align="center">
   <img src="{{ site.baseurl }}/images/install_mysql_3.png" class="img-no-border-radius"/>
 </div>
@@ -31,4 +31,4 @@ MySQL安装方式：.dmg文件
   <img src="{{ site.baseurl }}/images/install_mysql_4.png" class="img-no-border-radius"/>
 </div>
 ### 4.进行安装
-在Finder中打开文件，安装过程和其它程序安装过程一致，这里不再赘述。
+在Finder中双击文件进行安装，安装过程和其它程序安装过程一致，这里不再赘述。
