@@ -1,11 +1,9 @@
 ---
 layout: post
 title: "zsh下配置命令的别名"
-description: "zsh下配置命令的别名"
-date: 2017-3-28
-tags: [zsh ,Ubuntu]
-comments: true
-share: true
+subtitle: "zsh下配置命令的别名"
+date: 2017-03-28
+tags: zsh Ubuntu
 ---
 > Ubuntu版本：16.04 LTS
 

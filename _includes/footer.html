@@ -1,38 +1,4 @@
-<!-- Documents about icons are here: http://fontawesome.io/icons/ -->
-<div class="footer">
-	<hr />
-	<div class="footer-link">
-		{% if site.author.facebook %}
-		<a href="https://www.facebook.com/{{ site.author.facebook }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-		{% endif %}
-
-		{% if site.author.twitter %}
-		<a href="https://twitter.com/{{ site.author.twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-		{% endif %}
-
-		{% if site.author.github %}
-		<a href="https://github.com/{{ site.author.github }}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-		{% endif %}
-
-		{% if site.author.linkedin %}
-		<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-		{% endif %}
-
-		{% if site.author.medium %}
-		<a href="https://medium.com/@{{ site.author.medium }}" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
-		{% endif %}
-
-		{% if site.author.tumblr %}
-		<a href="https://{{ site.author.tumblr }}.tumblr.com" target="_blank"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
-		{% endif %}
-
-		{% if site.author.email %}
-		<a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-		{% endif %}
-
-	</div>
-	© 2016 {{ site.author.name }}. All rights reserved.
-	<div>
-		Theme by <a href="https://github.com/AWEEKJ/Kiko-plus" target="_blank">Kiko-Plus</a> | Proudly hosted by <a href="https://pages.github.com/" target="_blank">Github Pages</a>
-	</div>
-</div>
+<footer class="g-footer">
+    <section><a href="{{ site.baseurl }}">{{ site.title }}</a> © {{ site.time | date: '%Y' }}</section>
+    <section>Powered by <a href="//jekyllrb.com">Jekyll</a> | <a href="https://github.com/kaeyleo/jekyll-theme-H2O">Theme H2O</a></section>
+</footer>
