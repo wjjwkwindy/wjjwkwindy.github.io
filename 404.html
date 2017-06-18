@@ -1,12 +1,17 @@
 ---
 layout: default
+header-img: "assets/img/hero.jpg"
+description: "Sorry, Page Not Found :("
 ---
-<header>
-  <h1 class="header-small">
-    <a href="{{ site.baseurl }}">{{ site.name }}</a>
-  </h1>
+
+{% include header.html %}
+
+<header class="g-banner np-banner {{ site.postPatterns | prepend: 'post-pattern-' }}" data-theme="{{ site.theme-color }}">
+    <div class="post-wrapper">
+        <h1>404</h1>
+        <span class="subheading">{{ page.description }}</span>
+        <a href="{{ site.nav.home }}" class="btn">Back to home</a>
+    </div>
 </header>
-<div class="page">
-  <h1 class="page-title">{{ page.title }}</h1>
-  <span>Sorry, but the page you were trying to view does not exist.</span>
-</div>
+
+

@@ -1,11 +1,9 @@
 ---
 layout: post
 title: "eclipse中启动Java断言语句"
-description: "eclipse中使用-ea启用断言语句"
+subtitle: "eclipse中使用-ea启用断言语句"
 date: 2016-11-12
-tags: [java ,eclipse]
-comments: true
-share: true
+tags: java eclipse
 ---
 > 本文为转载加翻译。
 > [原文链接](http://stackoverflow.com/questions/5509082/eclipse-enable-assertions)
@@ -15,7 +13,7 @@ share: true
 1.在菜单中点击 `Run`，再点击 `Run Configurations`。
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/eclipse_assertions_1.png" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}assets/img/eclipse-assertions-1.png" class="img-no-border-radius"/>
 </div>
 
 2.在左边的面板中, 点击 `Java Application`，再点击 `Assertions`。
@@ -25,7 +23,7 @@ share: true
 4.在 `VM arguments` 输入框中, 输入 `-ea` 来启用断言语句。
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/eclipse_assertions_2.png" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}assets/img/eclipse-assertions-2.png" class="img-no-border-radius"/>
 </div>
 
 5.点击 `Apply` 按钮然后点击 `Run` 按钮.

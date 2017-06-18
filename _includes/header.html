@@ -1,14 +1,13 @@
-<header class="header">
-  <h1 class="header-title">
-    <a href="{{ site.url }}">{{ site.name }}<span>&#39;s blog</span></a>
-  </h1>
-  <nav class="header-nav">
-    {% for nav in site.nav %}
-    {% if nav.url contains 'http://' or nav.url contains 'https://' %}
-    <a href="{{ nav.url }}" target="{{ nav.target }}">{{ nav.name }}</a>
-    {% else %}
-    <a href="{{ nav.url | prepend: site.baseurl }}" target="{{ nav.target }}">{{ nav.name }}</a>
-    {% endif %}
-    {% endfor %}
-  </nav>
+<header class="g-header">
+    <div class="g-logo">
+        <a href="{{ site.baseurl }}"></a>
+    </div>
+    <i id="menu-toggle" class="iconfont icon-menu"></i>
+    <nav class="g-nav">
+        <ul>
+            {% for i in site.nav %}
+            <li><a href="{{ i[1] }}">{{ i[0] }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
 </header>

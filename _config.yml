@@ -1,92 +1,60 @@
-# # # # # # # # # # # # #
-#   K i k o - p l u s   #
-# # # # # # # # # # # # #
+# Site settings 配置站点
+title: '北极羊驼的独立博客' # 你的博客网站标题
+description: '前端开发者/伪极客/灵魂摄影师，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。' # 站点描述
+keyword: '北极羊驼, 北极羊驼的独立博客, 北极羊驼的博客, 前端, 前端开发, 前端博客, javascript, vuejs, nodejs, 设计' # 网站关键词
+url: 'http://wjjwkwindy.com' # your host
+baseurl: '/'
 
-# Basic
-name:               "wjjwkwindy"
+# Navigation links
+nav:
+  home: '/'
+  tags: '/tags.html'
 
+# Author 配置博主信息
+author: '北极羊驼'
+nickname: ''
+bio: '前端开发，热爱技术&设计，分享永不停歇'
+avatar: 'assets/img/profile.png'
 
+# Search
+search: true
 
-author:
-  name:             wjjwkwindy
-  github:           wjjwkwindy
-  twitter:          619118498
-  email:            wjjwkwindy|gmail.com
+# Comments
+disqus: true
 
-# Google-analytics
-google-analytics:
-  #id:               "UA-86298174-1"
+# Share
+social-share: true
+social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
 
-# Baidu-analytics
-baidu-analytics:
-  id:               true
+# theme color 主题皮肤
+theme-color: 'default'  # pink or default
 
-# Uyan(YouYan)
-uyan:
-  id:               true
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'ticTacToe'
 
-# URL
-url:                "http://wjjwkwindy.com"
-#url:               "http://127.0.0.1:4000"
-baseurl:            ""
+# SNS settings 配置社交网站url: weibo, zhihu, twitter, instagrame, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+sns:
+  weibo: '//weibo.com/u/2008892845'
+  juejin: '//juejin.im/user/57dfad197db2a24eb1c13f2a'
+  instagram: '//www.instagram.com/wjjwkwindy'
+  github: '//github.com/wjjwkwindy'
 
+# Tags 设置标签
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:           Asia/Shang_Hai
-permalink:          /:year-:month-:day/:title/
-
-# Pagination
-paginate:           5
-paginate_path:      /page:num/
+# Build settings
+paginate: 6 # 一页放几篇文章
+paginate_path: 'page:num'
+exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
 
 # Markdown
-markdown:           kramdown
+markdown: kramdown
+highlighter: rouge
 kramdown:
-  imput:            GFM
+  input: GFM
 
-# Navigation
-nav:
-  - name:           "About"
-    url:            "/about"
-    target:         "_top"
+RSS: false
 
-  - name:           "Archive"
-    url:            "/archive"
-    target:         "_top"
-
-  - name:           "Tags"
-    url:            "/tags"
-    target:         "_top"
-
-  - name:           "Github"
-    url:            "https://github.com/wjjwkwindy"
-    target:         "_blank"
-
-
-
-# Sass
-sass:
-  sass_dir:         _sass
-  style:            :compressed
-
-# Scopes
-defaults:
-  -
-    scope:
-      path:         ""
-      type:         "pages"
-    values:
-      layout:       "page"
-  -
-    scope:
-      path:         ""
-      type:         "posts"
-    values:
-      layout:       "post"
-
-# jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
-gems:
-  - jekyll-seo-tag
-  - jekyll-paginate
-
-exclude:            [vendor]
+# Plugins
+gems: [jekyll-paginate]

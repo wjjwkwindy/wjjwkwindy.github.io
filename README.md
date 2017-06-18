@@ -2,6 +2,6 @@
 
 #### View: **[wjjwkwindy.com](https://wjjwkwindy.com)**
 
-Theme by [Kiko-plus](https://github.com/AWEEKJ/Kiko-plus).  
+Hosted on [Github Pages](https://pages.github.com/).  
 Powered by [Jekyll](https://jekyllrb.com/).  
-Hosted on [Github Pages](https://pages.github.com/).
+Theme by [H2O](https://github.com/kaeyleo/jekyll-theme-H2O).

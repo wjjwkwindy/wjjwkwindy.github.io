@@ -1,11 +1,9 @@
 ---
 layout: post
 title: "解决你需要来自TrustedInstaller的权限才能对此文件夹进行更改"
-description: "Win10下删除或修改文件时提示你需要来自TrustedInstaller的权限才能对此文件夹进行更改"
+subtitle: "Win10下删除或修改文件时提示你需要来自TrustedInstaller的权限才能对此文件夹进行更改"
 date: 2016-10-30
-tags: [windows]
-comments: true
-share: true
+tags: windows
 ---
 
 > 本文为转载加翻译。
@@ -14,7 +12,7 @@ share: true
 因为笔记本固态硬盘装满了，今天在光驱位上加上了之前换下来的机械硬盘，但是在删除机械硬盘上残留的windows文件时提示“你需要来自TrustedInstaller的权限才能对此文件夹进行更改”。
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/TrustedInstaller_1.PNG" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}assets/img/TrustedInstaller-1.PNG" class="img-no-border-radius"/>
 </div>
 
 提示需要TrustedInstaller权限一般包含重要的windows文件，所以当你删除它时需要保持小心。
@@ -28,7 +26,7 @@ share: true
 1.右键点击文件夹然后选择“属性”选项。然后打开“安全”选项。
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/TrustedInstaller_2.png" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}assets/img/TrustedInstaller-2.png" class="img-no-border-radius"/>
 </div>
 
 2.点击“高级”按钮。
@@ -36,25 +34,25 @@ share: true
 3.在“所有者”栏，点击“更改”来从TrustedInstaller改变文件夹所有者。
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/TrustedInstaller_3.png" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}assets/img/TrustedInstaller-3.png" class="img-no-border-radius"/>
 </div>
 
 4.在“选择用户或组”窗口中点击“高级”按钮。
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/TrustedInstaller_4.png" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}assets/img/TrustedInstaller-4.png" class="img-no-border-radius"/>
 </div>
 
 5.点击“立即查找”并在列表中选择你的用户名。点击“确认”，再点击“确认”。
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/TrustedInstaller_5.png" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}assets/img/TrustedInstaller-5.png" class="img-no-border-radius"/>
 </div>
 
 6.选中“替换子容器和对象的所有者”，再点击“确认”。(注：文件夹包含文件较多时，需要等待一段时间)
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/TrustedInstaller_6.png" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}assets/img/TrustedInstaller-6.png" class="img-no-border-radius"/>
 </div>
 
 7.再一次点击“安全”选项窗口中的“高级”按钮。
@@ -66,13 +64,13 @@ share: true
 10.在基本权限中选中“完全控制”，再点击“确认”。
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/TrustedInstaller_7.png" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}assets/img/TrustedInstaller-7.png" class="img-no-border-radius"/>
 </div>
 
 11.选中“使用可从此对象继承的权限项目替换所有子对象的权限项目”。
 
 <div align="center">
-  <img src="{{ site.baseurl }}/images/TrustedInstaller_8.png" class="img-no-border-radius"/>
+  <img src="{{ site.baseurl }}assets/img/TrustedInstaller-8.png" class="img-no-border-radius"/>
 </div>
 
 12.点击“确认”按钮。(注：文件夹包含文件较多时，需要等待一段时间)
