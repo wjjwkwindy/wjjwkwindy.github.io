@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/screen.css">
+    <title>北极羊驼的博客</title>
+</head>
+<body>
+    
+    <!-- post or page logic -->
+    <header class="header">
+    <div class="header-container">
+        <div class="header-container-title">
+            <a href="/" class="header-title">北极羊驼的博客</a>
+        </div>
+        <nav class="header-nav">
+            <ul class="menu">
+                
+                    <li class="menu-item"><a href="/">Home</a></li>
+                
+                    <li class="menu-item"><a href="/archives">Archives</a></li>
+                
+                    <li class="menu-item"><a href="/about">About</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+    <main class="post-container">
+        <div class="post-inner">
+            <!-- post title -->
+            <header class="post-title">
+                
+                    <h1 class="title">eclipse中启动Java断言语句</h1>
+                    <h2 class="subtitle">在编写Java程序时，我们有的时候会使用Java的断言语句来调试代码，这篇文章就是教你如何在eclipse中启用断言语句。</h2>
+                    <span class="meta-item">Author: wjjwkwindy</span>
+                    <span class="meta-item">Date: 2018-06-05</span>
+                    <span class="meta-item">Tags:
+                    
+                        <a title="java">java</a>
+                    
+                        <a title="eclipse">eclipse</a>
+                    
+                    </span>
+                
+            </header>
+            <!-- post content -->
+            <blockquote>
+<p>本文为转载加翻译。<a href="http://stackoverflow.com/questions/5509082/eclipse-enable-assertions" target="_blank" rel="noopener">原文链接</a></p>
+</blockquote>
+<p>1.在菜单中点击 <code>Run</code>，再点击 <code>Run Configurations</code>。</p>
+<p><img src="/images/eclipse_assertions_1.png" alt=""></p>
+<p>2.在左边的面板中, 点击 <code>Java Application</code>，再点击 <code>Assertions</code>。</p>
+<p>3.在右边的面板中, 选中 <code>Arguments</code>。</p>
+<p>4.在 <code>VM arguments</code> 输入框中, 输入 <code>-ea</code> 来启用断言语句。</p>
+<p><img src="/images/eclipse_assertions_2.png" alt=""></p>
+<p>5.点击 <code>Apply</code> 按钮然后点击 <code>Run</code> 按钮.</p>
+<h2 id="将其设置为全局设置"><a href="#将其设置为全局设置" class="headerlink" title="将其设置为全局设置"></a>将其设置为全局设置</h2><p>1.点击菜单中的 <code>Window</code> (如果你使用的是Windows)，或者点击菜单中的 <code>Eclipse</code> (如果你使用Mac)。Linux的话应该是类似的。</p>
+<p>2.点击 <code>Preferences</code>。</p>
+<p>3.选择 <code>Java</code>, 然后在左边面板中点击 <code>Installed JREs</code>。</p>
+<p>4.选择你的 <code>JRE</code>, 然后咋右边点击 <code>Edit...</code> 按钮。</p>
+<p>5.在 <code>Default VM arguments</code> 输入框中, 添加 <code>-ea</code>。</p>
+
+            <!-- author info -->
+            
+                <div class="author">
+                    <a class="author_avatar" href="http://www.co2oc.com" style="background-image:url(/images/wjjwkwindy.png)"></a>
+                    <div>
+                        <a class="author_name" href="http://www.co2oc.com">wjjwkwindy</a>
+                        <p class="author_description">web前端开发，爱折腾，爱分享</p>
+                    </div>
+                </div>
+            
+            <!-- more post -->
+            <div></div>
+            <!-- disqus -->
+            
+                <div id="disqus_thread"></div>
+            
+        </div>
+        <footer class="footer">
+    <section class="copyright">
+        <a class='link' href="http://www.co2oc.com">北极羊驼的博客</a> © 2018 </section>
+    <section class="poweredby">Powered by
+        <a class='link' href="https://hexo.io">hexo</a>
+        & Theme
+        <a class='link' href="https://github.com/wjjwkwindy/FlameReaction">FlameReaction</a>
+    </section>
+</footer>
+        <script>
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://www-co2oc-com.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </main>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
