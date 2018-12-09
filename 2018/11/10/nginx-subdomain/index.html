@@ -52,35 +52,45 @@
             <!-- post title -->
             <header class="post-title">
                 
-                    <h1 class="title">eclipse 中启动 Java 断言语句</h1>
-                    <h2 class="subtitle">在编写 Java 程序时，我们有的时候会使用 Java 的断言语句来调试代码，这篇文章就是教你如何在 eclipse 中启用断言语句。</h2>
+                    <h1 class="title">Nginx 中配置二级域名</h1>
+                    <h2 class="subtitle">当使用 Nginx 搭建静态资源服务器时，在其中配置二级域名</h2>
                     <span class="meta-item">Author: wjjwkwindy</span>
-                    <span class="meta-item">Date: 2018-06-05</span>
+                    <span class="meta-item">Date: 2018-11-10</span>
                     <span class="meta-item">Tags:
                     
-                        <a title="java">java</a>
+                        <a title="back-end">back-end</a>
                     
-                        <a title="eclipse">eclipse</a>
+                        <a title="nginx">nginx</a>
                     
                     </span>
                 
             </header>
             <!-- post content -->
             <blockquote>
-<p>本文为转载加翻译。<a href="http://stackoverflow.com/questions/5509082/eclipse-enable-assertions" target="_blank" rel="noopener">原文链接</a></p>
+<p>Nginx 搭建和部署方法请参考 <a href="https://juejin.im/post/5a12881a6fb9a044fd115dd4" target="_blank" rel="noopener">掘金</a></p>
 </blockquote>
-<p>1.在菜单中点击 <code>Run</code>，再点击 <code>Run Configurations</code>。</p>
-<p><img src="/images/eclipse_assertions_1.png" alt=""></p>
-<p>2.在左边的面板中, 点击 <code>Java Application</code>，再点击 <code>Assertions</code>。</p>
-<p>3.在右边的面板中, 选中 <code>Arguments</code>。</p>
-<p>4.在 <code>VM arguments</code> 输入框中, 输入 <code>-ea</code> 来启用断言语句。</p>
-<p><img src="/images/eclipse_assertions_2.png" alt=""></p>
-<p>5.点击 <code>Apply</code> 按钮然后点击 <code>Run</code> 按钮.</p>
-<h2 id="将其设置为全局设置"><a href="#将其设置为全局设置" class="headerlink" title="将其设置为全局设置"></a>将其设置为全局设置</h2><p>1.点击菜单中的 <code>Window</code> (如果你使用的是Windows)，或者点击菜单中的 <code>Eclipse</code> (如果你使用Mac)。Linux的话应该是类似的。</p>
-<p>2.点击 <code>Preferences</code>。</p>
-<p>3.选择 <code>Java</code>, 然后在左边面板中点击 <code>Installed JREs</code>。</p>
-<p>4.选择你的 <code>JRE</code>, 然后咋右边点击 <code>Edit...</code> 按钮。</p>
-<p>5.在 <code>Default VM arguments</code> 输入框中, 添加 <code>-ea</code>。</p>
+<h3 id="1-创建二级域名对应的静态文件夹。"><a href="#1-创建二级域名对应的静态文件夹。" class="headerlink" title="1.创建二级域名对应的静态文件夹。"></a>1.创建二级域名对应的静态文件夹。</h3><pre><code class="bash">cd /server/app
+mkdir subdomain
+cd subdomain
+</code></pre>
+<h3 id="2-传入需要部署的二级域名静态文件。"><a href="#2-传入需要部署的二级域名静态文件。" class="headerlink" title="2.传入需要部署的二级域名静态文件。"></a>2.传入需要部署的二级域名静态文件。</h3><pre><code class="bash">// 这里使用 git 来导入远程仓库
+git clone https://github.com/xxx/xxx
+</code></pre>
+<h3 id="3-打开-Nginx-配置文件并添加新的-server-块。"><a href="#3-打开-Nginx-配置文件并添加新的-server-块。" class="headerlink" title="3.打开 Nginx 配置文件并添加新的 server 块。"></a>3.打开 Nginx 配置文件并添加新的 server 块。</h3><pre><code class="bash">vim /server/runtime/nginx/1.14.0/conf/nginx.conf
+</code></pre>
+<pre><code>server{
+    listen       80;
+    server_name 二级域名; // eg: server_name subdomain.example.com
+
+    location / {
+       root  刚才设置的二级域名目录; // eg: root /server/app/subdomain
+       index  index.html index.htm;
+    }
+</code></pre><h3 id="4-让-Nginx-重新读取配置文件"><a href="#4-让-Nginx-重新读取配置文件" class="headerlink" title="4.让 Nginx 重新读取配置文件"></a>4.让 Nginx 重新读取配置文件</h3><pre><code class="bash">/server/runtime/nginx/1.14.0/sbin/nginx -s reload
+</code></pre>
+<h3 id="5-配置-DNS-解析。（这里以腾讯云为例）"><a href="#5-配置-DNS-解析。（这里以腾讯云为例）" class="headerlink" title="5.配置 DNS 解析。（这里以腾讯云为例）"></a>5.配置 DNS 解析。（这里以腾讯云为例）</h3><h4 id="5-1进入云解析，点击后面的更多-gt-分配子域名至项目"><a href="#5-1进入云解析，点击后面的更多-gt-分配子域名至项目" class="headerlink" title="5.1进入云解析，点击后面的更多 -&gt; 分配子域名至项目"></a>5.1进入云解析，点击后面的更多 -&gt; 分配子域名至项目</h4><p><img src="/images/nginx_subdomain_1.PNG" alt=""></p>
+<h4 id="5-2输入你想要绑定的二级域名，点击确定。"><a href="#5-2输入你想要绑定的二级域名，点击确定。" class="headerlink" title="5.2输入你想要绑定的二级域名，点击确定。"></a>5.2输入你想要绑定的二级域名，点击确定。</h4><p><img src="/images/nginx_subdomain_2.PNG" alt=""></p>
+<h4 id="5-3点击协作子域名-gt-你的二级域名-gt-添加纪录，记录值填写你的服务器的公网-ip。"><a href="#5-3点击协作子域名-gt-你的二级域名-gt-添加纪录，记录值填写你的服务器的公网-ip。" class="headerlink" title="5.3点击协作子域名 -&gt; 你的二级域名 -&gt; 添加纪录，记录值填写你的服务器的公网 ip。"></a>5.3点击协作子域名 -&gt; 你的二级域名 -&gt; 添加纪录，记录值填写你的服务器的公网 ip。</h4><p><img src="/images/nginx_subdomain_3.PNG" alt=""></p>
 
             <!-- author info -->
             
