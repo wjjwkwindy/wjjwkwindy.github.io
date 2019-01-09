@@ -66,17 +66,19 @@
                 
             </header>
             <!-- post content -->
-            <blockquote>
+            <div class="post-image"><br><img src="/images/nginx_subdomain_header.jpg" alt=""><br></div>
+
+<blockquote>
 <p>Nginx 搭建和部署方法请参考 <a href="https://juejin.im/post/5a12881a6fb9a044fd115dd4" target="_blank" rel="noopener">掘金</a></p>
 </blockquote>
-<h3 id="1-创建二级域名对应的静态文件夹。"><a href="#1-创建二级域名对应的静态文件夹。" class="headerlink" title="1.创建二级域名对应的静态文件夹。"></a>1.创建二级域名对应的静态文件夹。</h3><pre><code class="bash">cd /server/app
+<h2 id="1-创建二级域名对应的静态文件夹。"><a href="#1-创建二级域名对应的静态文件夹。" class="headerlink" title="1.创建二级域名对应的静态文件夹。"></a>1.创建二级域名对应的静态文件夹。</h2><pre><code class="bash">cd /server/app
 mkdir subdomain
 cd subdomain
 </code></pre>
-<h3 id="2-传入需要部署的二级域名静态文件。"><a href="#2-传入需要部署的二级域名静态文件。" class="headerlink" title="2.传入需要部署的二级域名静态文件。"></a>2.传入需要部署的二级域名静态文件。</h3><pre><code class="bash">// 这里使用 git 来导入远程仓库
+<h2 id="2-传入需要部署的二级域名静态文件。"><a href="#2-传入需要部署的二级域名静态文件。" class="headerlink" title="2.传入需要部署的二级域名静态文件。"></a>2.传入需要部署的二级域名静态文件。</h2><pre><code class="bash">// 这里使用 git 来导入远程仓库
 git clone https://github.com/xxx/xxx
 </code></pre>
-<h3 id="3-打开-Nginx-配置文件并添加新的-server-块。"><a href="#3-打开-Nginx-配置文件并添加新的-server-块。" class="headerlink" title="3.打开 Nginx 配置文件并添加新的 server 块。"></a>3.打开 Nginx 配置文件并添加新的 server 块。</h3><pre><code class="bash">vim /server/runtime/nginx/1.14.0/conf/nginx.conf
+<h2 id="3-打开-Nginx-配置文件并添加新的-server-块。"><a href="#3-打开-Nginx-配置文件并添加新的-server-块。" class="headerlink" title="3.打开 Nginx 配置文件并添加新的 server 块。"></a>3.打开 Nginx 配置文件并添加新的 server 块。</h2><pre><code class="bash">vim /server/runtime/nginx/1.14.0/conf/nginx.conf
 </code></pre>
 <pre><code>server{
     listen       80;
@@ -86,11 +88,11 @@ git clone https://github.com/xxx/xxx
        root  刚才设置的二级域名目录; // eg: root /server/app/subdomain
        index  index.html index.htm;
     }
-</code></pre><h3 id="4-让-Nginx-重新读取配置文件"><a href="#4-让-Nginx-重新读取配置文件" class="headerlink" title="4.让 Nginx 重新读取配置文件"></a>4.让 Nginx 重新读取配置文件</h3><pre><code class="bash">/server/runtime/nginx/1.14.0/sbin/nginx -s reload
+</code></pre><h2 id="4-让-Nginx-重新读取配置文件"><a href="#4-让-Nginx-重新读取配置文件" class="headerlink" title="4.让 Nginx 重新读取配置文件"></a>4.让 Nginx 重新读取配置文件</h2><pre><code class="bash">/server/runtime/nginx/1.14.0/sbin/nginx -s reload
 </code></pre>
-<h3 id="5-配置-DNS-解析。（这里以腾讯云为例）"><a href="#5-配置-DNS-解析。（这里以腾讯云为例）" class="headerlink" title="5.配置 DNS 解析。（这里以腾讯云为例）"></a>5.配置 DNS 解析。（这里以腾讯云为例）</h3><h4 id="5-1进入云解析，点击后面的更多-gt-分配子域名至项目"><a href="#5-1进入云解析，点击后面的更多-gt-分配子域名至项目" class="headerlink" title="5.1进入云解析，点击后面的更多 -&gt; 分配子域名至项目"></a>5.1进入云解析，点击后面的更多 -&gt; 分配子域名至项目</h4><p><img src="/images/nginx_subdomain_1.PNG" alt=""></p>
-<h4 id="5-2输入你想要绑定的二级域名，点击确定。"><a href="#5-2输入你想要绑定的二级域名，点击确定。" class="headerlink" title="5.2输入你想要绑定的二级域名，点击确定。"></a>5.2输入你想要绑定的二级域名，点击确定。</h4><p><img src="/images/nginx_subdomain_2.PNG" alt=""></p>
-<h4 id="5-3点击协作子域名-gt-你的二级域名-gt-添加纪录，记录值填写你的服务器的公网-ip。"><a href="#5-3点击协作子域名-gt-你的二级域名-gt-添加纪录，记录值填写你的服务器的公网-ip。" class="headerlink" title="5.3点击协作子域名 -&gt; 你的二级域名 -&gt; 添加纪录，记录值填写你的服务器的公网 ip。"></a>5.3点击协作子域名 -&gt; 你的二级域名 -&gt; 添加纪录，记录值填写你的服务器的公网 ip。</h4><p><img src="/images/nginx_subdomain_3.PNG" alt=""></p>
+<h2 id="5-配置-DNS-解析。（这里以腾讯云为例）"><a href="#5-配置-DNS-解析。（这里以腾讯云为例）" class="headerlink" title="5.配置 DNS 解析。（这里以腾讯云为例）"></a>5.配置 DNS 解析。（这里以腾讯云为例）</h2><h3 id="5-1进入云解析，点击后面的更多-gt-分配子域名至项目"><a href="#5-1进入云解析，点击后面的更多-gt-分配子域名至项目" class="headerlink" title="5.1进入云解析，点击后面的更多 -&gt; 分配子域名至项目"></a>5.1进入云解析，点击后面的更多 -&gt; 分配子域名至项目</h3><p><img src="/images/nginx_subdomain_1.PNG" alt=""></p>
+<h3 id="5-2输入你想要绑定的二级域名，点击确定。"><a href="#5-2输入你想要绑定的二级域名，点击确定。" class="headerlink" title="5.2输入你想要绑定的二级域名，点击确定。"></a>5.2输入你想要绑定的二级域名，点击确定。</h3><p><img src="/images/nginx_subdomain_2.PNG" alt=""></p>
+<h3 id="5-3点击协作子域名-gt-你的二级域名-gt-添加纪录，记录值填写你的服务器的公网-ip。"><a href="#5-3点击协作子域名-gt-你的二级域名-gt-添加纪录，记录值填写你的服务器的公网-ip。" class="headerlink" title="5.3点击协作子域名 -&gt; 你的二级域名 -&gt; 添加纪录，记录值填写你的服务器的公网 ip。"></a>5.3点击协作子域名 -&gt; 你的二级域名 -&gt; 添加纪录，记录值填写你的服务器的公网 ip。</h3><p><img src="/images/nginx_subdomain_3.PNG" alt=""></p>
 
             <!-- author info -->
             
