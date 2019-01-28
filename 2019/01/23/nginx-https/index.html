@@ -32,8 +32,10 @@
     <p class="loader-title">Loading</p>
   </div>
 </div>
- <div class="archive-wrapper">
-  <header class="header">
+ 
+    <!-- post or page logic -->
+    <div class="wrapper">
+    <header class="header">
     <div class="header-container">
         <div class="header-container-title">
             <a href="/" class="header-title">北极羊驼的博客</a>
@@ -51,22 +53,47 @@
         </nav>
     </div>
 </header>
+    <main class="post-container">
+        <div class="post-inner">
+            <!-- post title -->
+            <header class="post-title">
+                
+                    <h1 class="title">Nginx 中配置HTTPS</h1>
+                    <h2 class="subtitle">当使用 Nginx 搭建静态资源服务器时，使用HTTPS协议连接</h2>
+                    <span class="meta-item">Author: wjjwkwindy</span>
+                    <span class="meta-item">Date: 2019-01-23</span>
+                    <span class="meta-item">Tags:
+                    
+                        <a title="back-end">back-end</a>
+                    
+                        <a title="nginx">nginx</a>
+                    
+                    </span>
+                
+            </header>
+            <!-- post content -->
+            <div class="post-image"><br><img src="/images/nginx_https_header.jpg" alt=""><br></div>
 
-  <main class="post-container">
-    <div class="post-inner">
-      <div class="archive">
-           
-        <h4 class="year">2018</h4>
-         
-        <div class="archive_item">
-          <a class="title" href="/2018/04/25/fix-trustedInstaller/">解决你需要来自 TrustedInstaller 的权限才能对此文件夹进行更改</a>
-          <span class="date">2018-04-25</span>
+            <!-- author info -->
+            
+                <div class="author">
+                    <a class="author_avatar" href="http://www.co2oc.com" style="background-image:url(/images/wjjwkwindy.png)"></a>
+                    <div>
+                        <a class="author_name" href="http://www.co2oc.com">wjjwkwindy</a>
+                        <p class="author_description">web前端开发，爱折腾，爱分享</p>
+                    </div>
+                </div>
+            
+            <!-- more post -->
+            <div></div>
+            <!-- disqus -->
+            
+                <div id="disqus_thread"></div>
+            
         </div>
-        
-      </div>
-    </div>
-  </main>
-  <footer class="footer">
+        </main></div>
+    
+    <footer class="footer">
     <section class="copyright">
         <a class="link" href="http://www.co2oc.com">北极羊驼的博客</a> © 2018 </section>
     <section class="poweredby">Powered by
@@ -75,7 +102,15 @@
         <a class="link" target="_blank" href="https://github.com/wjjwkwindy/FlameReaction">FlameReaction</a>
     </section>
 </footer>
-</div>
+    <script>
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://www-co2oc-com.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
  <script src="/js/main.js"></script>
   </body>
 </html>
