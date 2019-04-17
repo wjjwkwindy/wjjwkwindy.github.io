@@ -1,7 +1,7 @@
 # wjjwkwindy's blog
 
-#### View: **[wjjwkwindy.github.io](http://wjjwkwindy.github.io)**
+#### View: **[co2oc.com](https://co2oc.com)**
 
-Hosted on [Github Pages](https://pages.github.com/).  
+Hosted on [Vultr](https://www.vultr.com/).  
 Powered by [Hexo](https://hexo.io/).  
-Theme by :fire:[FlameReaction](https://github.com/wjjwkwindy/FlameReaction).
+Theme by [FlameReaction](https://github.com/wjjwkwindy/FlameReaction).
